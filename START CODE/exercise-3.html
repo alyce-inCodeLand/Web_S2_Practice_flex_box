@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        margin: 0;
+        padding: 0;
+    }
+    .main {
+        /* if use 100vh use it with scroll bar */
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+        gap: 1rem;
+    }
+    .header {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: bold;
+        color: white;
+        padding: 20px;
+        border-radius: 0.5rem;
+    }
+    #head {
+        background-color: #1e90ff;
+        box-shadow: inset -5px -5px 5px #0077ea, inset 5px 0px 5px #0077ea;
+    }
+    #foot {
+        background-color: #4169e1;
+        box-shadow: inset -5px -5px 5px #1d44b8, inset 5px 0px 5px #1d44b8;
+    }
+    .body {
+        flex-grow: 4;
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+    }
+    .text {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: white;
+        font-weight: bold;
+        
+        margin: 0 ;
+    }
+    .left-side {
+        width: 70vw;
+        padding: 1rem;
+        background-color: #3cb371;
+        box-shadow: inset -5px -5px 5px #2f8d59, inset 5px 0px 5px #2f8d59;
+        border-radius: 0.5rem;
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+    }
+    .all_boxes {
+        display: flex;
+        /* use margin auto to make all the boxes alighn in center */
+        margin: auto;
+        flex-wrap: wrap;
+        gap: 1rem;     
+    }
+    .box {
+        width: 100px;
+        height: 100px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: white;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 0.5rem;
+        background-color: #2f8d59;
+        box-shadow: inset -2px -5px 5px #226741, inset 2px 0px 5px #226741;
+
+    }
+    .text1 {
+        padding-left: 1rem;
+        padding-top: 1rem;
+        margin: 0;
+    }
+    
+    .right-side {
+        width: 30vw;
+        display: flex;
+        justify-content: flex-start;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: bold;
+        color: white;
+        border-radius: 0.5rem;
+        background-color: #ff6347;
+        box-shadow: inset -5px -5px 5px #e02200, inset 5px 0px 5px #e02200;
+
+    }
+    .footer {
+        flex-grow: 1;
+        background-color: brown;
+    }
+    
+
+    
+</style>
+<body>
+    <div class="main">
+        <section class="header" id="head">header</section>
+        <section class="body">
+            <div class="left-side">
+                <p class="text">main</p> 
+                <div class="all_boxes">
+                    <div class="box">item</div>
+                    <div class="box">item</div>
+                    <div class="box">item</div>
+                    <div class="box">item</div>
+                    <div class="box">item</div>
+                    <div class="box">item</div>
+                    <div class="box">item</div>
+                    <div class="box">item</div>
+                    <div class="box">item</div>
+                    <div class="box">item</div>
+                    <div class="box">item</div>
+
+                </div>
+            </div>
+            <div class="right-side">
+                <p class="text1">Side bar</p>
+            </div>
+        </section>
+        <section class="header" id="foot">Footer</section>
+    </div>
+</body>
+</html>
